@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/painel.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/painel.css">
+    <title>Painel</title>
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="./img/painelEstabelecimento.jpg" alt="Painel" class="img-fluid">
+        </div>
+        <div class="col-sm-9">
+          <h1 id="outNome"></h1>
+          <form>
+            <p><label for="inNome">Nome:</label>
+              <input type="text" class="form-control" id="inNome" required autofocus>
+            </p>
+            <p><label for="inDescricao">Descrição:</label>
+              <input type="text" class="form-control" id="inDescricao" required>
+            </p>
+            <p><label for="inPreco">Preço:</label>
+                <input type="number" class="form-control" id="inPreco" required step="0.01">
+              </p>
+            <input type="submit" class="btn btn-primary float-right mb-3 botao" value="Adicionar">
+          </form>
+          <table class="table table-striped">
+            <tr>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+              <th>Ação</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./js/painel.js"></script>
+  </body>
+  </html>

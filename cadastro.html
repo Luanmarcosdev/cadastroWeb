@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/cadastro.png">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1 class="titulo">Cadastrar Estabelecimento</h1>
+    <div class="containerDestaque">
+        <p>Preencha os dados abaixo para cadastrar seu estabelecimento.</p>
+        <form>
+            <p><label for="inRazao">Razão Social:</label><br>
+                <input type="text" class="campoFormulario" id="inRazao" required autofocus>
+            </p>
+            <p><label for="inCnpj">CNPJ da Empresa:</label><br>
+                <input type="text" class="campoFormulario" id="inCnpj" maxlength="14" required>
+            </p>
+            <p><label for="inEndereco">Endereço da Empresa:</label><br>
+                <input type="text" class="campoFormulario" id="inEndereco" required>
+            </p>
+            <p><label for="inEmail">Email:</label><br>
+                <input type="texto" class="campoFormulario" id="inEmail" required>
+            </p>
+            <p><label for="inEmailConfirmacao">Confirmar Endereço de Email:</label><br>
+                <input type="texto" class="campoFormulario" id="inEmailConfirmacao" required>
+            </p>
+            <p><label for="inSenha">Senha:</label><br>
+                <input type="password" class="campoFormulario" id="inSenha" required>
+            </p>
+            <p><label for="inSenhaConfirmacao">Confirmar Senha:</label><br>
+                <input type="password" class="campoFormulario" id="inSenhaConfirmacao" required>
+            </p>
+            <input type="submit" value="Cadastrar" class="botaoSubmit">
+        </form>
+    </div>
+    <script src="./js/cadastro.js"></script>
+</body>
+</html>

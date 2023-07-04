@@ -1,0 +1,19 @@
+.containerDestaque{
+    margin: 0px 0 100px 0;
+    padding: 50px; 
+      
+}
+
+.campoFormulario{
+    padding: 0;
+    padding-left: 15px;
+    
+}
+
+p{
+    margin: 15px 0;
+}
+
+.botaoSubmit{
+    margin-left: 7.5px;
+}

@@ -1,0 +1,29 @@
+:root{
+    --cor-branca: #FFFFFF;
+    --cor-cinza: #666666;
+    --cor-cinza-secundario : #F5F5F5;
+    --cor-azul: #2148C0;
+
+    --fonte: 'Inter', sans-serif;
+}
+
+body{
+    font-family: var(--fonte);
+    font-size: 1rem;
+}
+
+.botao{
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+}
+
+#outNome{
+    font-style: italic;
+    color: var(--cor-azul);
+}
+
+.exclui { 
+    color: red;
+    cursor: pointer; 
+}
+
