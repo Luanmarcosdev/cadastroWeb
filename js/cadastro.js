@@ -3,7 +3,9 @@ const formulario = document.querySelector("form")
 //funcoes
 function validaFormulario(razaoSocial, cnpj, endereco, email, confirmaEmail, senha, confirmaSenha){
     
-    let erros = 0
+    let erros = 0 //contadora de erros
+
+    //validacoes dos campos do formulario
 
     let texto = `Verifique e corrija os erros abaixo:\n`
     
@@ -43,7 +45,7 @@ function validaFormulario(razaoSocial, cnpj, endereco, email, confirmaEmail, sen
         formulario.reset()
         formulario.inRazao.focus()
         salvarDados(razaoSocial, cnpj, endereco, email, senha)
-        window.location.href = './index.html'
+        window.location.href = './index.html' //direciona o usuario para tela de login
     }
 
 }
@@ -77,6 +79,7 @@ formulario.addEventListener("submit", (e) => {
 
     e.preventDefault()
     
+    //obtem dados digitados pelo usuario
     const razaoSocial = formulario.inRazao.value
     const cnpj = formulario.inCnpj.value
     const endereco = formulario.inEndereco.value
@@ -85,6 +88,7 @@ formulario.addEventListener("submit", (e) => {
     const senha = formulario.inSenha.value
     const confirmaSenha = formulario.inSenhaConfirmacao.value
 
+    //envia dados obtidos para validacao
     validaFormulario(razaoSocial, cnpj, endereco, email, confirmaEmail, senha, confirmaSenha)
 
 })
